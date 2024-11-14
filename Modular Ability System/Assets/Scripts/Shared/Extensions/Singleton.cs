@@ -13,15 +13,13 @@ namespace Shared.Extensions
         {
             get
             {
+                if (_instance != null) return _instance;
+                
+                _instance = FindObjectOfType<T>();
                 if (_instance == null)
                 {
-
-                    _instance = FindObjectOfType<T>();
-                    if (_instance == null)
-                    {
-                        GameObject singleton = new GameObject(typeof(T).Name);
-                        _instance = singleton.AddComponent<T>();
-                    }
+                    GameObject singleton = new GameObject(typeof(T).Name);
+                    _instance = singleton.AddComponent<T>();
                 }
                 return _instance;
             }

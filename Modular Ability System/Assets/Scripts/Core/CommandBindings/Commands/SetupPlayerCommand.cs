@@ -3,10 +3,13 @@ using Core.CommandBindings.Payloads;
 using Core.Services.CameraTransition;
 using Core.Services.GameFactory;
 using Core.Services.ResourceProvider;
+using Core.Services.SoundService;
 using Core.Systems.CommandSystem;
 using Game.Player;
 using Shared.Constants;
 using UI.WindowSystem;
+using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Core.CommandBindings.Commands
 {
@@ -46,7 +49,7 @@ namespace Core.CommandBindings.Commands
                 _gameFactory.CreatePlayerActions(),
                 _windowManager);
             
-            // SoundService.Instance.Initialize(Object.FindObjectOfType<AudioListener>());
+            SoundService.Instance.Initialize(Object.FindObjectOfType<AudioListener>());
             
             gameplayPayload.PlayerSpawn.SetSpawn(player.gameObject);
             gameplayPayload.Action.Invoke(_gameFactory);

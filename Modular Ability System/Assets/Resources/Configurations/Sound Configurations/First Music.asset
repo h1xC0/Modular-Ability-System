@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: First Music
   m_EditorClassIdentifier: 
   Identifier: -106854
-  _soundTitle: 0
+  _soundTitle: 1
   _soundType: 1
   _audioClip: {fileID: 0}
   _playOnEnable: 0

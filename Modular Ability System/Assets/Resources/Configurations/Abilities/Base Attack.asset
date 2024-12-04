@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc98b12af4b343c08ff6cda766313385, type: 3}
+  m_Name: Base Attack
+  m_EditorClassIdentifier: 
+  Identifier: -247132
+  _title: Base Attack
+  _animationComponent:
+    _animationClip: {fileID: -203655887218126122, guid: 76469641ae032a640812731961d284c1, type: 3}
+  _audioComponent:
+    _soundTitle: 0
+  _areaAttackComponent:
+    _damage: 0
+  _vfxComponent:
+    rid: 5041581120824017056
+  _movingComponent:
+    rid: 5041581120824017057
+  _propertiesModifierComponent:
+    rid: 5041581120824017058
+  references:
+    version: 2
+    RefIds:
+    - rid: 5041581120824017056
+      type: {class: VFXComponent, ns: Game.Combat.Abilities, asm: Assembly-CSharp}
+      data: 
+    - rid: 5041581120824017057
+      type: {class: MovingComponent, ns: Game.Combat.Abilities, asm: Assembly-CSharp}
+      data:
+        _lookAtTarget: 0
+        _moveForward: 0
+        _moveStep: 0
+    - rid: 5041581120824017058
+      type: {class: PropertiesModifierComponent, ns: Game.Combat.Abilities, asm: Assembly-CSharp}
+      data: 

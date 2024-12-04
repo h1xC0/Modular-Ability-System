@@ -4,6 +4,7 @@ using Core.Services.GameFactory;
 using Core.Services.ResourceProvider;
 using Core.Services.SoundService;
 using Core.Services.WindowAnimation;
+using Game.Combat.Abilities;
 using Game.Player;
 using UI.Windows.HUDWindow;
 
@@ -18,6 +19,7 @@ namespace Shared.Constants
         private static ResourceInfo CameraProfiles = new(typeof(CameraConfiguration), "Configurations/Camera Profiles");
         private static ResourceInfo LayerMaskConfig = new(typeof(LayerMaskConfiguration), "Configurations/LayerMask Configuration");
         private static ResourceInfo SoundConfigurations = new(typeof(SoundConfiguration), "Configurations/Sound Configurations");
+        private static ResourceInfo AbilityConfigurations = new(typeof(AbilityConfiguration), "Configurations/Abilities");
 
         private static ResourceInfo Player = new(typeof(GameCharacter), "Prefabs/Player/GameCharacter");
         
@@ -33,6 +35,7 @@ namespace Shared.Constants
             CameraProfiles,
             LayerMaskConfig,
             SoundConfigurations,
+            AbilityConfigurations,
             
             // Characters
             Player,

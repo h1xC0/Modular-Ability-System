@@ -43,7 +43,7 @@ namespace Core.Installers
         public void Initialize()
         {
             SetGeneralSettings(_targetFrameRate, _enableLogger);
-            CursorExtensions.AllowCursor(false);
+            CursorExtensions.AllowCursor(true);
 
             _sceneTransition.SceneLoadEvent += DispatchGameplayCommand;
         }
